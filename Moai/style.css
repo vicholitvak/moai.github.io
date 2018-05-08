@@ -1,0 +1,91 @@
+body {
+	height: 100%;
+	width: auto;
+	display: grid;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #0C0F14;
+	color: #fff;
+	font-size: 1.1em;
+	line-height: 1.5;
+	text-align: center;
+}
+
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 1em 0em;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: 20% auto 20%;
+	grid-template-rows: 200px auto 1fr;
+	background-image: url("startup.jpg");
+	background-size: cover;
+}
+
+#my-logo {
+	justify-self: center;
+	margin-top: 25px;
+	height: 150px;
+	grid-column: 2/2;
+	grid-row: 1/1;
+	
+}
+
+#info {
+	margin-top: 1em;
+	font-family: Helvetica, sans-serif;
+	align-self: auto;
+	color: black;
+	grid-column: 2/2;
+	grid-row: 4/3;
+}
+
+.btn {
+	height:30px;
+	width:175px;
+	font-family: Arial, sans-serif;
+	cursor:pointer;
+	font-size:25px;
+	color: #F4F3F3;
+	border-radius:10px;
+	
+	margin-top: 1em;
+	margin-bottom: 3em;
+	box-shadow: 6px 6px 6px black;
+	vertical-align: middle;
+	text-align: center;
+    background: linear-gradient(#0C0F14, #084DEC);
+	
+
+    transition: background 0.05s linear;
+	
+	background-size:1px 200px;
+	height: 2em;
+	transition: all .05s linear;
+	
+}
+
+
+.clear {
+	grid-row: 5/5;
+	grid-column: 2/3;
+	vertical-align: middle;
+	text-align: center;
+¿
+	
+}
+
+.btn:hover{
+	background-position:100px;
+}
+
+.btn:active {
+	box-shadow: 2px 2px 2px #777;
+	border-bottom:1px solid #084DEC;
+	transform: translateY(3px);
+}
+
+
+
